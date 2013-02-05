@@ -3,4 +3,4 @@ url_comparator
 
 A simple javascript page to compare two url's and their parameters
 
-[Demo](http://jsbin.com/enagag/2)
+[Live demo](http://jampow.github.com/url_comparator/)
