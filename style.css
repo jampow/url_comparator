@@ -1,3 +1,7 @@
+input, ul {float: left;width: 46%;margin: 1%;}
+
+ul {list-style: none; padding: 0;}
+li {padding: 2px 5px;word-wrap: break-word;}
 .notfound {background-color: red;}
 .key {background-color: yellow;}
 .keyvalue {background-color: greenyellow;}
