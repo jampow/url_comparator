@@ -1,5 +1,5 @@
 $(function(){
-	$('#compare').click(function(){
+	$('#url1,#url2').keyup(function(){
 
 	  var url1 = $("#url1").val();
 	  var url2 = $("#url2").val();
