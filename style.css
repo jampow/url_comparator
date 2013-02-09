@@ -2,6 +2,9 @@ input, ul {float: left;width: 46%;margin: 1%;}
 
 ul {list-style: none; padding: 0;}
 li {padding: 2px 5px;word-wrap: break-word;}
-.notfound {background-color: red;}
-.key {background-color: yellow;}
-.keyvalue {background-color: greenyellow;}
+
+.notfound {background-color: red;border: solid 3px red;}
+.key      {background-color: yellow;border: solid 3px yellow;}
+.keyvalue {background-color: greenyellow;border: solid 3px greenyellow;}
+
+.hover {border-color: #000;}
