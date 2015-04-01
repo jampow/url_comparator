@@ -37,23 +37,23 @@ $(function(){
 
 function compareLists(parse1, parse2, result) {
   $.each(parse1.queryKey, function(k1,v1){
-    var klass = "notfound";
+    var cssStatusClass = "notfound";
 
     $.each(parse2.queryKey, function(k2,v2){
       if(k1 == k2){
         // key founded
-        klass = "key";
+        cssStatusClass = "key";
 
         if(v1 == v2){
           // key and value equal
-          klass += "value";
+          cssStatusClass += "value";
         }
 
         return false;
       }
     });
 
-    result.append('<li class="'+klass+' '+k1+' '+v1+' '+'">'+k1+" = "+v1+'</li>');
+    result.append('<li class="'+cssStatusClass+' '+k1+' '+v1+' '+'">'+k1+" = "+v1+'</li>');
 
   });
 }
