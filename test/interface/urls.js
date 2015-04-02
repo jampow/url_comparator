@@ -29,7 +29,7 @@ describe('Testing parameters',function(){
 		return chai.expect('#url1res').dom.to.contain.text("param = 2");
 	});
 
-	it('should have parameter named test with value 1',function(done){
+	it('should have parameter named test with value 1',function(){
 		return chai.expect('#url1res').dom.to.contain.text("test = 1");
 	});
 
