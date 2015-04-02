@@ -4,8 +4,8 @@ $(function(){
       var url1 = $("#url1").val();
       var url2 = $("#url2").val();
 
-      var url1par = parseUri(url1);
-      var url2par = parseUri(url2);
+      var url1par = parseUri(fixTypo(url1));
+      var url2par = parseUri(fixTypo(url2));
 
       var url1res = $('#url1res');
       var url2res = $('#url2res');
@@ -34,6 +34,10 @@ $(function(){
     });
 
 });
+
+function fixTypo(url) {
+  return url.replace('?&', '?');
+}
 
 function compareLists(parse1, parse2, result) {
   $.each(parse1.queryKey, function(k1,v1){
