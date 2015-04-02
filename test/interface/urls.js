@@ -30,7 +30,7 @@ describe('Testing parameters',function(){
 	});
 
 	it('should have parameter named test with value 1',function(done){
-		return chai.expect('#url1res').dom.to.contain.text("merda");
+		return chai.expect('#url1res').dom.to.contain.text("test = 1");
 	});
 
 });
