@@ -21,6 +21,7 @@ after(function() {
 
 describe('Testing parameters',function(){
 	beforeEach(function() {
+		this.timeout(5000);
 		this.driver.get('file:///' + index);
 		return this.driver.findElement(By.id('url1')).sendKeys('http://sitedomain.com/?&test=1&param=2');
 	});
