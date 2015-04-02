@@ -10,7 +10,7 @@ var index = path.resolve(__dirname, '../../index.html');
 
 before(function(){
 	this.timeout(10000);
-	this.driver = new sw.Builder().withCapabilities(sw.Capabilities.chrome()).build();
+	this.driver = new sw.Builder().withCapabilities(sw.Capabilities.firefox()).build();
 	chai.use(chaiWebdriver(this.driver));
 	return this.driver.getWindowHandle();
 })
